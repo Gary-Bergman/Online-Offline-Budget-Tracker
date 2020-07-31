@@ -1,8 +1,8 @@
 const FILES_TO_CACHE = [
     "/",
-    "/index.html",
     "/index.js",
     "/styles.css",
+    "/db.js",
     "/manifest.webmanifest",
     "/icons/icon-192x192.png",
     "/icons/icon-512x512.png"
@@ -52,7 +52,7 @@ self.addEventListener("fetch", event => {
         return;
     }
     // Handles runtime GET requests for data from /api routes
-    if (event.request.url.includes("/api/images")) {
+    if (event.request.url.includes("/api/")) {
         // Makes network request and falls back to cache if network request fails (offline)
         event.respondWith(
             caches.open(RUNTIME_CACHE).then(cache => {
