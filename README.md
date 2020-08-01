@@ -19,7 +19,7 @@
 
   ## Table of Contents
 
-  *  [Deployed](#Deployed))
+  *  [Deployed](#Deployed)
 
   *  [Description](#Description)
 
